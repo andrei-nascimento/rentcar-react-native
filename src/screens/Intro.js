@@ -23,8 +23,6 @@ export default function Intro() {
     );
 }
 
-
-
 const styles = StyleSheet.create({
     logomarca: {
         flexDirection: 'row',
