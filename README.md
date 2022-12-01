@@ -1,4 +1,4 @@
-# Rentcar
+# Rentcar 🚙
 
 Locadora de carros online onde o usuário solicita o veículo diretamente pelo app sem a necessidade de contato humano, tudo de forma digital e automatizada.
 
