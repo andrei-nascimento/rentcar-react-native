@@ -1,8 +1,10 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export default function Intro() {
+export default function Intro({navigation}) {
+
     return (     
         <LinearGradient 
             style={{
@@ -15,7 +17,9 @@ export default function Intro() {
             <View style={styles.logomarca}>
                 <Image style={styles.logo}
                     source={require('../../assets/imgs/volante-branco.png')} />
-                <Text style={styles.title}>Rentcar</Text>
+                <Text style={styles.title} onPress={() => navigation.navigate('Login')}>
+                    Rentcar
+                </Text>
             </View>
 
             <StatusBar style="auto" />

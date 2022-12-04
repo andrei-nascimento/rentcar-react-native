@@ -1,19 +1,21 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { TouchableOpacity } from 'react-native-web';
+import { Feather } from '@expo/vector-icons';
 
-export default function Header() {
+export default function HeaderCadastro() {
     return(
         <View style={styles.container}>
-            
+
             <View style={styles.logomarca}>
                 <Image style={styles.logo}
-                    source={require('../../assets/imgs/volante-verde.png')} />
+                    source={require('../../assets/imgs/volante-azul.png')} />
                 <Text style={styles.title}>Rentcar</Text>
             </View>
             
             <View style={styles.carLogin}>
-                <Image style={styles.car1}
-                    source={require('../../assets/imgs/car1.png')} />
+                <Image style={styles.car2}
+                    source={require('../../assets/imgs/car2.png')} />
             </View>
             <StatusBar style="auto" />
         </View>
@@ -24,7 +26,6 @@ const styles = StyleSheet.create({
     container:{
         justifyContent: 'center',
         paddingTop: 80,
-        paddingBottom: 12
     },
     logomarca: {
         flexDirection: 'row',
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 32,
         fontFamily: 'Nunito_900Black_Italic',
-        color: '#17B3A6',
+        color: '#19779B',
     },
     logo: {
         width: 32,
@@ -46,8 +47,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingBottom: 40,
     },
-    car1: {
+    car2: {
         width: 160,
         height: 105,
-    }
+    },
+    arrowBack: {
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        marginBottom: 16,
+        marginLeft: 20
+    },
 });
