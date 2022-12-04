@@ -21,6 +21,7 @@
       "supportsTablet": true
     },
     "android": {
+      "windowSoftInputMode": "adjustPan|adjustResize",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

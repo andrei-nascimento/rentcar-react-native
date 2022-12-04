@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'
 
-export default function Conectar() {
+export default function ConectarCadastro() {
     return (
         <View style={styles.container}>
             
@@ -21,15 +21,6 @@ export default function Conectar() {
                     <Image style={styles.face} source={require('../../assets/imgs/facebook.png')} />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.twitterLogo}>
-                    <Image style={styles.twitter} source={require('../../assets/imgs/twitter.png')} />
-                </TouchableOpacity>
-            </View>
-
-            <View style={styles.cadastrarLink}>
-                <Text style={styles.cadastrar}>
-                    Não possui uma conta? Cadastre-se
-                </Text>
             </View>
 
         </View>
@@ -40,7 +31,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        paddingTop: 54,
+        paddingTop: 16,
         paddingBottom: 32,
     },
     connectText: {
@@ -61,7 +52,8 @@ const styles = StyleSheet.create({
         height: 60,
         borderWidth: 1,
         borderRadius: 8,
-        borderColor: '#d9d9d9'
+        borderColor: '#d9d9d9',
+        marginRight: 14,
     },
     google: {
         width: 30,
@@ -75,31 +67,10 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 8,
         borderColor: '#d9d9d9',
-        marginLeft: 28,
-        marginRight: 28,
+        marginLeft: 14,
     },
     face: {
         width: 36,
         height: 36,
-    },
-    twitterLogo: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: 60,
-        height: 60,
-        borderWidth: 1,
-        borderRadius: 8,
-        borderColor: '#d9d9d9'
-    },
-    twitter: {
-        width: 30,
-        height: 30
-    },
-    cadastrarLink: {
-        paddingTop: 54
-    },
-    cadastrar: {
-        color: '#7C7C8A',
-        fontSize: 14
     },
 })
